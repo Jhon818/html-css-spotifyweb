@@ -5,12 +5,26 @@
 }
 
 header {
- background-color: aqua;
- width: 100%;
- height: 80px;
+    width: 100%;
+    height: 60px;
+    background-color: grey;
 }
 
+header > img {
+  float: left;
+  height: 50px;
+  padding: 5px;
+}
+
+ header button#upgrade {
+     float: right;
+     padding: 5px;
+ }
+
+
+
 .lt-nav {
+    position: fixed;
     height: 100vh;
     width: 20vh;
     background-color: red;
@@ -19,23 +33,55 @@ header {
 
 main {
     display: flex;
+    position: relative;
+    flex-flow: column wrap;
     width: 100%;
-    background-color: greenyellow;
+    background-color: greenyellow; 
+}
+
+
+#top-nav {
+    background-color: darkorange;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+#top-nav ul {
+    display: flex;
+    flex-flow:  row wrap;
+    background-color: crimson;
+    justify-content: space-around;
+}
+
+#top-nav li {
+    list-style-type: none;
+   padding: 30px; 
+   z-index: 3;
 }
 
 /* navbar nel main  */
 
 .navbar-center {
+    padding: 20px;
     height: 10vh;
     width: 100%;
-    background-color: black;
+    background-color: chocolate;
+    
 }
 
 .navbar-center ul {
+    margin-right: 30px;
     float: left;
-    justify-content: space-between;
-    text-align: center;
-    background-color:chocolate ;
+    height: 100px;
+    width: 100px;
+    background-color: cornflowerblue;
+}
+
+
+.navbar-center ul li {
+    position: relative;
+    bottom: 0%;
 }
 
 /* /navbar nel main  */
@@ -64,7 +110,10 @@ main {
 
 
 footer {
+    position: fixed;
     width: 100%;
     height: 80px;
     background-color: grey;
+    bottom: 0%;
+    z-index: 2;
 }
