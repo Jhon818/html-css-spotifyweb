@@ -1,0 +1,71 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+header {
+ background-color: aqua;
+ width: 100%;
+ height: 80px;
+ right: 0%;
+ z-index: 1;
+}
+
+.lt-nav {
+    height: 100vh;
+    width: 20vh;
+    background-color: red;
+}
+
+main {
+    display: flex;
+    width: 100%;
+    background-color: greenyellow;
+}
+
+/* navbar nel main  */
+
+.navbar-center {
+    
+    height: 10vh;
+    width: 100%;
+    background-color: black;
+}
+
+.navbar-center ul {
+    flex-flow: column wrap;
+    justify-content: space-between;
+    text-align: center;
+}
+
+/* /navbar nel main  */
+
+
+/* recently played */
+
+.clearfix {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+ .recenlty-played {
+    height: 10vh;
+    width: 100%;
+    background-color:blue;
+}
+
+.recenlty-played div{
+  float: left;   
+}
+
+/* /recently played */
+
+
+
+footer {
+    width: 100%;
+    height: 80px;
+    background-color: grey;
+}
