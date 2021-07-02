@@ -39,11 +39,11 @@ div.head {
 
 
 .lt-nav ul.btn-nav {
-    display: flex;
     align-self: flex-start;
-    padding-top: 10px;
     flex-flow: column wrap;
-    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    bottom: 0%;
 }
 
 .lt-nav ul.btn-nav li {
@@ -65,16 +65,20 @@ div.head {
     margin-right: 10px;
 }
 
-.playlist-scroll li {
-    padding-bottom: 10px;
-}
 
-.lt-nav ul.home,.playlist,.btn-nav,.playlist-scroll {
+
+
+.lt-nav ul.home,.playlist,.playlist-scroll {
     list-style-type: none;
     text-decoration: none;
     padding-left: 20px;
 }
 
+.playlist-scroll {
+    display: flex;
+    padding: 10px;
+    flex-flow: column wrap;
+}
 
 .lt-nav ul.home {
     height: 100px;
@@ -86,8 +90,9 @@ div.head {
 }
 
 .lt-nav ul > img {
-    height: 60px;
-    padding: 10px;
+    height: 50px;
+    padding-left: 25px;
+    padding-top: 10px;
 }
 
 .lt-nav li a > img {
@@ -271,6 +276,7 @@ footer .time-bar {
     width: 500px;
     background: black;
 }
+
 
 
 
