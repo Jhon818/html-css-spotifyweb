@@ -4,39 +4,38 @@
     box-sizing: border-box;
 }
 
-header {
-    width: 100%;
+div.head {
+    position: fixed;
+    width: calc(100% - 20vh);
+    left: 20vh;
     height: 60px;
     background-color: grey;
 }
 
-header > img {
-  float: left;
-  height: 50px;
-  padding: 5px;
-}
 
- header button#upgrade {
+
+ .head button#upgrade {
      float: right;
      padding: 5px;
  }
 
 
-
+ 
 .lt-nav {
     position: fixed;
-    height: 100vh;
+    height: calc(100% - 80px);
     width: 20vh;
     background-color: red;
-    z-index: 2;
+    z-index: 1;
 }
 
 main {
     display: flex;
     position: relative;
+    top: 60px;
+    left: 20vh;
     flex-flow: column wrap;
-    width: 100%;
-    background-color: greenyellow; 
+    background-color: yellow;
 }
 
 
@@ -54,6 +53,7 @@ main {
     justify-content: space-around;
 }
 
+
 #top-nav li {
     list-style-type: none;
    padding: 30px; 
@@ -66,23 +66,41 @@ main {
     padding: 20px;
     height: 10vh;
     width: 100%;
-    background-color: chocolate;
-    
 }
 
 .navbar-center ul {
+    text-decoration: none;
+    list-style-type: none;
+    height: 25vh;
+    width: 25vh;
     margin-right: 30px;
     float: left;
-    height: 100px;
-    width: 100px;
-    background-color: cornflowerblue;
+}
+
+.navbar-center ul > img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
 
 
 .navbar-center ul li {
-    position: relative;
+    color: white;
+    font-size: 20px;
     bottom: 0%;
 }
+
+.navbar-center ul li:last-child {
+    font-size: 15px;
+    color: grey;
+}
+
+/* last nav main */
+ul.img-border > img {
+    border-radius: 100px;
+}
+
+/* last nav main */
 
 /* /navbar nel main  */
 
