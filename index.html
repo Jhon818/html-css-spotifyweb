@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./mobile-first/style.css">
     <link rel="stylesheet" href="./mobile-first/devices.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,38 +20,50 @@
 
     <!-- home -->
 <ul>
-    
-    <!-- <img src="/img/logo.svg" alt="Spotify">
-    <li></li>
-    <li></li>
-    <li></li> -->
-
+    <img src="./img/logo.svg" alt="Spotify">
 </ul>
  <!-- /home -->
-<ul>
 
-<!-- <li>Playlist</li>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-<li></li> -->
+ <ul class="home">
+
+<li><a href=""><img src="./img/home.svg" alt=""></a>Home</li>
+<li><a href=""><img src="./img/search.svg" alt=""></a>Cerca</li>
+<li><a href=""><img src="./img/libreria.svg" alt=""></a>La tua libreria</li>
 
 </ul>
 
-<ul>
-    <!-- <li>Installa app</li>
+<ul class="playlist">
+
+       <li><a href="">Playlist</a></li>
+    <li><a href=""><i class="fas fa-plus-square"></i></a></li>
+    
+    <li>Crea playlist</li>
+    
+    </ul>
+
+    <ul class="playlist-scroll">
+
+        <li><a href=""></a>Nome Playlist</li>
+        <li><a href=""></a>Nome Playlist</li>
+        <li><a href=""></a>Nome Playlist</li>
+        <li><a href=""></a>Nome Playlist</li>
+        <li><a href=""></a>Nome Playlist</li>
+        <li><a href=""></a>Nome Playlist</li>
+        <li><a href=""></a>Nome Playlist</li>
+        
+        </ul>
+
+<ul class="btn-nav">
+    <li><img src="./img/download.svg" alt=""> Installa app</li>
     <hr>
-    <img src="/img/profile.svg" alt=""> <li>Jhon Doe</li> -->
+    <li><img src="./img/profile.svg" alt="">Jhon Doe</li>
 </ul>
 
 </nav>
 <!-- /barra laterale con lista  -->
 
     <!-- head pagina con bottone a destra -->
-    <div class=" head clearfix">
+    <!-- <div class=" head clearfix">
 
            
          
@@ -55,7 +71,7 @@
         Effettua l'upgrade
              </button>
         
-            </div>
+            </div> -->
         <!-- /head pagina con bottone a destra -->
     <!-- barra laterale con lista  -->
 
@@ -64,7 +80,6 @@
 
     
 
-<section class="main-container">
 
 
     <nav id="top-nav">
@@ -87,10 +102,11 @@
              <ul>
 
                  <img src="./img/metal_lifting.jpg" alt="">
-                 
+
+                 <div class="text-img">
                  <li>Heavy Metal</li>
                  <li>Subtitle</li>
-     
+                </div>
              </ul>
      
      
@@ -179,7 +195,7 @@
      
          
      
-</section>
+
 
 
 

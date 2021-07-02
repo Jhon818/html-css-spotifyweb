@@ -4,12 +4,17 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
 div.head {
     position: fixed;
     width: calc(100% - 20vh);
     left: 20vh;
     height: 60px;
     background-color: grey;
+    z-index: 1;
 }
 
 
@@ -19,23 +24,100 @@ div.head {
      padding: 5px;
  }
 
-
+/* lateral navbar */
  
 .lt-nav {
+    display: flex;
+    flex-flow: column wrap;
     position: fixed;
     height: calc(100% - 80px);
-    width: 20vh;
-    background-color: red;
-    z-index: 1;
+    width: 230px;
+    background-color:black;
+    color: white;
 }
 
+
+
+.lt-nav ul.btn-nav {
+    display: flex;
+    align-self: flex-start;
+    padding-top: 10px;
+    flex-flow: column wrap;
+}
+
+.lt-nav ul.btn-nav li {
+    padding: 10px;
+}
+
+.lt-nav ul.btn-nav li:last-child img {
+    background: grey;
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+
+.lt-nav ul.btn-nav li:first-child img {
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+}
+
+.playlist-scroll li {
+    padding-bottom: 10px;
+}
+
+.lt-nav ul.home,.playlist,.btn-nav,.playlist-scroll {
+    list-style-type: none;
+    text-decoration: none;
+    padding-left: 20px;
+}
+
+
+.lt-nav ul.home {
+    height: 100px;
+}
+
+.lt-nav ul.playlist {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.lt-nav ul > img {
+    height: 60px;
+    padding: 10px;
+}
+
+.lt-nav li a > img {
+    height: 25px;
+    margin-right: 5px;
+}
+
+.lt-nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding-left: 10px;
+}
+
+.lt-nav .playlist li a{
+    margin-right: 10px;
+}
+
+.fa-plus-square::before {
+  font-size: 50px;
+  color: grey;
+}
+
+
+/* /lateral navbar */
 main {
     display: flex;
-    position: relative;
-    top: 60px;
-    left: 20vh;
     flex-flow: column wrap;
     background-color: yellow;
+    padding-left: 230px;
 }
 
 
@@ -55,9 +137,10 @@ main {
 
 
 #top-nav li {
-    list-style-type: none;
-   padding: 30px; 
-   z-index: 3;
+   list-style-type: none;
+   padding: 10px; 
+   color: grey;
+   font-size: 15px;
 }
 
 /* navbar nel main  */
@@ -67,6 +150,13 @@ main {
     height: 10vh;
     width: 100%;
 }
+
+/* navbar text  */
+div .text-img {
+    display: inline-block;
+    padding: 20px;
+}
+/* navbar text  */
 
 .navbar-center ul {
     text-decoration: none;
@@ -87,7 +177,6 @@ main {
 .navbar-center ul li {
     color: white;
     font-size: 20px;
-    bottom: 0%;
 }
 
 .navbar-center ul li:last-child {
