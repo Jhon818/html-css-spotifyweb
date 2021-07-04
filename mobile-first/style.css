@@ -322,12 +322,16 @@ div.img-border > img {
     padding-bottom: 30px;
 }
 
+.navbar-center.padding div li {
+    color: white;
+}
+
 /* 
 overlay */
 
 .overlay {
     background-color: rgba(0, 0, 0, 0.5);
-    content: "f144";
+    content: "";
     position: absolute;
     top: 50%;
     left: 50%;
