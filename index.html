@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+ndivcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./mobile-first/style.css">
     <link rel="stylesheet" href="./mobile-first/devices.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,55 +15,73 @@
 <body>
 
 
+<section id="wrapper">
 
 <nav class="lt-nav">
 
     <!-- home -->
-<ul class="logo">
+<div class="logo">
     <img src="./img/logo.svg" alt="Spotify">
-</ul>
+</div>
  <!-- /home -->
 
- <ul class="home">
+ <div class="home">
 
 <li><a href=""><img src="./img/home.svg" alt=""></a>Home</li>
 <li><a href=""><img src="./img/search.svg" alt=""></a>Cerca</li>
 <li><a href=""><img src="./img/libreria.svg" alt=""></a>La tua libreria</li>
 
-</ul>
+</div>
 
-<ul class="playlist">
+<div class="playlist-title">
 
-       <li><a href="">Playlist</a></li>
+    <li><a href="">Playlist</a></li>
+
+</div>
+
+
+<div class="playlist">
+
+       
     <li><a href=""><i class="fas fa-plus-square"></i></a></li>
 
     <li>Crea playlist</li>
     
-    </ul>
+    </div>
 
-    <ul class="playlist-scroll">
+    <div class="playlist-scroll">
 
-        <li><a href=""></a>Nome Playlist</li>
-        <li><a href=""></a>Nome Playlist</li>
-        <li><a href=""></a>Nome Playlist</li>
-        <li><a href=""></a>Nome Playlist</li>
-        <li><a href=""></a>Nome Playlist</li>
-        <li><a href=""></a>Nome Playlist</li>
-        <li><a href=""></a>Nome Playlist</li>
-        
-        </ul>
+<div>
+    <li><a href=""></a>Nome Playlist</li>
+    <li><a href=""></a>Nome Playlist</li>
+    <li><a href=""></a>Nome Playlist</li>
+    <li><a href=""></a>Nome Playlist</li>
+    <li><a href=""></a>Nome Playlist</li>
+    <li><a href=""></a>Nome Playlist</li>
+    <li><a href=""></a>Nome Playlist</li>
+    
+</div>
+      
+        </div>
 
-<ul class="btn-nav">
+<div class="btn-nav">
     <li><img src="./img/download.svg" alt=""> Installa app</li>
     <hr>
     <li><img src="./img/profile.svg" alt="">Jhon Doe</li>
-</ul>
+</div>
 
 </nav>
 <!-- /barra laterale con lista  -->
 
     <!-- head pagina con bottone a destra -->
-    <!-- <div class=" head clearfix">
+ 
+        <!-- /head pagina con bottone a destra -->
+    <!-- barra laterale con lista  -->
+
+<main>
+
+
+    <div id="head-button">
 
            
          
@@ -71,84 +89,81 @@
         Effettua l'upgrade
              </button>
         
-            </div> -->
-        <!-- /head pagina con bottone a destra -->
-    <!-- barra laterale con lista  -->
-
-<main>
-
-
-    
+            </div>
 
 
 
     <nav id="top-nav">
 
-        <ul>
-     
-             <li>IN EVIDENZA</li>
-             <li>PODCAST</li>
-             <li>CALSSIFICHE</li>
-             <li>GENERI E MOOD</li>
-             <li>NUOVE USCITE</li>
-             <li>SCOPRI</li>
-     
-        </ul>
-     
+        <span>In evidenza</span>
+        
+        <span>Podcast</span>
+        <span>Classifiche</span>
+        <span>Generi e Mood</span>
+        <span>Nuove Uscite</span>
+        <span>Scopri</span>
+        
      </nav>
+
+    
      
          <nav class="navbar-center clearfix">
+
+            <h3 class="recently-played">
+                Recently Played
+            </h3>
              
-             <ul>
+             <div>
 
                  <img src="./img/metal_lifting.jpg" alt="">
-
-                 <div class="text-img">
+                 
+<div class="overlay"></div>
+                 
                  <li>Heavy Metal</li>
                  <li>Subtitle</li>
                 </div>
-             </ul>
+             </div>
      
      
-             <ul>
+             <div>
                  
                 <img src="./img/stranger.jpeg" alt="">
                 <li>Stranger Things, Vol.1
                     (a Netflix Original Soundtrack)
                 </li>
                 <li>KIle Dixon & Michael Stoin</li>
-             </ul>
+             </div>
      
              
-             <ul>
+             <div>
                  <img src="./img/aquietplace.jpeg" alt="">
                  <li>A quiet place</li>
                  <li>Subtitle</li>
      
-             </ul>
+             </div>
      
-             <ul>
+             <div>
                  <img src="./img/split.jpeg" alt="">
                  <li>Split</li>
                  <li>Subtitle</li>
      
-             </ul>
+             </div>
      
-             <ul>
+             <div>
 
                  <img src="./img/cure.jpeg" alt="">
                  <li>A cure for Wellness</li>
                  <li>Subtitle</li>
      
-             </ul>
+             </div>
      
-             <ul>
+             <div>
 
                 <img src="./img/sinister.jpeg" alt="">
                 <li>Sinister</li>
                 <li>Subtitle</li>
      
-             </ul>
+             </div>
      
      
      
@@ -157,40 +172,53 @@
      
      
          
-         <nav class="navbar-center clearfix">
+         <nav class="navbar-center clearfix padding">
 
-             <ul>
+            <h3 class="text-content">
+                Creato per Jhon Doe
+            </h3>
+
+            <p class="text-content">Più ascolti più accurati saranno i suggerimenti</p>
+
+             <div>
      
                  <img src="./img/radar.jpeg" alt="">
                  <li>Release Radar</li>
      
-             </ul>
+             </div>
      
      
-             <ul>
+             <div>
      
                 <img src="./img/mixdaily.jpeg" alt="">
                  <li>Daily Mix 1</li>
      
-             </ul>
+             </div>
          </nav>
      
-         <nav class="navbar-center clearfix">
+         <nav class="navbar-center clearfix  ">
 
-             <ul class="img-border">
+            <h3 class="text-content">
+               Artisti più popolari
+            </h3>
+
+            <p class="text-content" >Più ascolti più accurati saranno i suggerimenti</p>
+
+
+             <div class="img-border">
      
                  <img src="./img/youg.jpeg" alt="">
                  <li></li>
      
-             </ul>
+             </div>
      
      
-             <ul  class="img-border">
+             <div  class="img-border">
      
                 <img src="./img/einaudi.jpeg" alt="">
                  <li></li>
      
-             </ul>
+             </div>
          </nav>
      
          
@@ -218,12 +246,14 @@
 
 </div>
 
-
 <div class="heart-folder">
  
-
+    <span><i class="far fa-heart"></i></span>
     
+    <span><i class="far fa-folder"></i></span>
+
 </div>
+
 
 </div>
 
@@ -243,21 +273,58 @@
 
     </div>
 
-        <div class="time1">0.25</div>
-    <div class="time-bar">
-        <div class="time2">4.35</div>
+<div class="time-bar">  
+
+    <div class="time1">
         
+       <span>0.25</span>
+
+    </div>
+
+    <div class="offset-bar"></div>
+    
+
+    <div class="time2">
+
+       <span>4.35</span>  
+
     </div>
 
 </div>
 
-<div class="bottom-right-side">
+</div>
 
+<div class="bottom-right-side clearfix">
+
+    <div class="menu">
+        <i class="fas fa-ellipsis-v"></i>
+        <i class="fas fa-bars"></i>
+    </div>
+
+    <div class="desktop">
+
+        <i class="fas fa-desktop"></i>
+
+    </div>
+
+
+    <div class="volume">
+
+        <i class="fas fa-volume-up"></i>
+
+    </div>
+
+    <div class="volume-time-bar">
+
+       
+        <div class="time-bar offset-bar"></div>
+
+    </div>
   
-
 </div>
 <!-- footer fisso -->
 </footer>
 
+</section>
 </body>
 </html>
