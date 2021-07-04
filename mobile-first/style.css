@@ -9,21 +9,24 @@ body {
 }
 
 #wrapper {
-    width: 100%;
-    height: 100vh;
+    background-color: rgb(43, 42, 50);
+    
 }
 
 
 
 #head-button {
-    float: left;
+    position: fixed;
     height: 60px;
-    background-color: black;
+    width: calc(100% - 230px);
+    left: 230px;
+    background-color: rgba(3, 3, 3, 0.377);
     z-index: 1;
 }
 
 
 #head-button button#upgrade:hover {
+    float: right;
     transform: scale(1.1);
 }
 
@@ -204,10 +207,11 @@ body {
 /* /lateral navbar */
 main {
     display: flex;
-    height: 150vh;
+    height: 100%;
+    overflow-y: auto;
     flex-flow: column wrap;
-    background-color: rgb(43, 42, 50);
     padding-left: 230px;
+    padding-top: 60px;
 }
 
 
@@ -269,11 +273,14 @@ h3.recently-played {
 
 /* navbar text  */
 
-.navbar-center img + li, img + li + li {
+.navbar-center img + li {
+    font-size: 18px;
     text-align: center;
     padding: 5px;
     font-weight: bold;
 }
+
+
 
 div .text-img {
     display: inline-block;
@@ -289,6 +296,7 @@ div .text-img {
     width: 25vh;
     margin-right: 10px;
     float: left;
+    margin-bottom: 10px;
 }
 
 .navbar-center div > img {
@@ -300,13 +308,18 @@ div .text-img {
 /* nav.navbar-center div img {} */
 
 .navbar-center div li {
+    text-align: center;
     color: white;
     font-size: 15px;
+    font-weight: bold;
 }
+
+
 
 .navbar-center div li:last-child {
     font-size: 15px;
     color: grey;
+    font-weight: lighter;
 }
 
 /* last nav main */
@@ -330,17 +343,18 @@ div.img-border > img {
 overlay */
 
 .overlay {
+    position: relative;
     background-color: rgba(0, 0, 0, 0.5);
-    content: "";
+}
+
+.play-button {
+    display: none;
     position: absolute;
-    top: 50%;
-    left: 50%;
     transform: translate( -50% , -50%);
 }
 
-.overlay img:hover {
-
-    display: none;
+.overlay:hover + .play-button{
+    display: block;
 }
 
 
@@ -465,15 +479,19 @@ footer .time-bar > .time1 {
 }
 
 
-footer .time-bar::after {
-    content: "";
+footer  div .circle{
     height: 15px;
+    display: none;
     width: 15px;
     border-radius: 100%;
     background-color: white;
     position: absolute;
     left: 30%;
     top: -5px;
+}
+
+footer div .circle:hover {
+    display: block;
 }
 
 footer .time-bar .time2 {
