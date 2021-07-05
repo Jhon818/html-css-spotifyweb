@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 body {
     font-family: 'Montserrat', sans-serif;
 }
@@ -59,6 +60,9 @@ body {
     font-size: 15px;
 }
 
+.lt-nav .logo img:last-child {
+display: none;
+}
 
 
 .lt-nav div.btn-nav {
@@ -260,9 +264,7 @@ main {
      cursor: pointer;
  }
 
- .lt-nav li:active {
-     color:white;
- }
+ 
  
 
 
@@ -374,13 +376,12 @@ overlay */
 
 div.overlay:hover .play-button {
     display: block;
-    filter: opacity(0.9) saturate(0.5);
 }
 
  div.overlay:hover img {
     display:block;
     position: absolute;
-    filter: opacity(0.9);
+    filter: grayscale(.6) ;
 }
 
 

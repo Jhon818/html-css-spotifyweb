@@ -1,0 +1,60 @@
+@media screen and (max-width:600px) {
+    
+    .lt-nav {
+        width: 50px;
+    }
+
+  
+    .lt-nav div.playlist-title, .playlist li, .playlist-scroll ,.btn-nav span , hr , div.home span{
+        display: none;
+        padding: 0%;
+    }
+
+    .lt-nav div.btn-nav , .lt-nav div.home > li {
+        padding: 0%;
+        margin: 0%;
+    }
+
+    .lt-nav .logo img:first-child {
+        display: none;
+    }
+
+    .lt-nav .logo img:last-child {
+        display: block;
+        padding: 5px;
+    }
+
+
+    #head-button {
+        position: static;
+        width: 600px;
+    }
+
+
+    main {
+        width: 100%;
+        padding-left: 50px;
+    }
+
+    main #top-nav span {
+        width: 30%;
+    }
+
+    
+
+footer {
+    width: 600px;
+}
+
+    footer  .bottom-left-side , .bottom-center-side , .bottom-right-side{
+     max-width: 100%;
+     width: 30%;
+    }
+
+   footer .bottom-center-side .music-player , div.bottom-center-side .time-bar {
+    width: 30%;
+    justify-content: center;
+    display: flex;
+   }
+
+}
