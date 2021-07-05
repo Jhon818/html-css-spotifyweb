@@ -361,6 +361,9 @@ div.img-border > img {
 /* 
 overlay */
 
+.overlay {
+    position: relative;
+}
 
 
 .play-button {
@@ -368,7 +371,7 @@ overlay */
     display: none;
     font-size: 50px;
     left: 50%;
-    top: 40%;
+    top: 50%;
     transform:  translate(-50% , -50%);
     color: white;
 }
@@ -382,6 +385,7 @@ div.overlay:hover .play-button {
     display:block;
     filter: grayscale(.6) ;
 }
+
 
 
 
@@ -464,6 +468,7 @@ footer .bottom-center-side {
     display: flex;
     flex-flow: column nowrap;
     color: white;
+    width: 50%;
 }
 
 footer .bottom-center-side i {
@@ -479,7 +484,6 @@ footer .bottom-center-side i:nth-child(3) {
 .music-player {
     display: flex;
     justify-content: center;
-    align-content: space-between;
     text-align: center;
 }
 
@@ -488,22 +492,28 @@ footer .bottom-center-side i:nth-child(3) {
     cursor: pointer;
 }
 
-
+.container-bar {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
 
 footer .time-bar {
     position: relative;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between ;
     height: 3px;
-    width: 100%;
+    width: 80%;
     background:grey;
 }
 
 footer .time-bar > .time1 {
-    position: absolute;
-    left: -50px;
-    width: 30px;
     align-self: center;
+}
+
+footer .time-bar > .time2 {
+    align-self: center;
+    justify-self: end;
 }
 
 
@@ -545,12 +555,6 @@ footer .circle{
 }
 
 
-footer .time-bar .time2 {
-    position: absolute;
-    right: -50px;
-    width: 30px;
-    align-self: center;
-}
 
 
 footer .bottom-right-side {
@@ -565,6 +569,10 @@ footer .bottom-right-side .menu,.desktop,.volume,.volume-time-bar {
     margin: 10px;
 }
 
+footer .bottom-right-side .menu {
+    width: 20px;
+}
+
 footer .bottom-right-side .volume-time-bar {
     position: relative;
     background-color: grey;
@@ -576,7 +584,6 @@ footer .bottom-right-side .volume-time-bar {
 }
 
 footer .offset-bar {
-    position: relative;
     width: 30%;
     background: white;
 }

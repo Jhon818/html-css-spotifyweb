@@ -51,11 +51,10 @@ footer {
 
     footer  .bottom-left-side , .bottom-center-side , .bottom-right-side{
      max-width: 100%;
-     width: 30%;
+
     }
 
    footer .bottom-center-side .music-player , div.bottom-center-side .time-bar {
-    width: 30%;
     justify-content: center;
     display: flex;
    }
