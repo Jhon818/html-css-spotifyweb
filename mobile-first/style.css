@@ -10,7 +10,6 @@ body {
 
 #wrapper {
     background-color: rgb(43, 42, 50);
-    
 }
 
 
@@ -136,6 +135,9 @@ body {
     padding: 20px;
     height: 180px;
     overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: rgb(255, 255,rgba(0, 0, 0, 0.055), 255, 0.055);
+    margin: 2px;
     flex-flow: column wrap;
 }
 
@@ -212,6 +214,7 @@ main {
     flex-flow: column wrap;
     padding-left: 230px;
     padding-top: 60px;
+    padding-bottom: 80px;
 }
 
 
@@ -247,6 +250,12 @@ main {
      color: white;
      cursor: pointer;
  }
+
+ .lt-nav li:active {
+     color:white;
+ }
+ 
+
 
 /* navbar nel main  */
 
@@ -343,19 +352,26 @@ div.img-border > img {
 /* 
 overlay */
 
-.overlay {
-    position: relative;
-    background-color: rgba(0, 0, 0, 0.5);
-}
+
 
 .play-button {
     display: none;
-    position: absolute;
-    transform: translate( -50% , -50%);
+    font-size: 50px;
+    left: 50%;
+    top: 50%;
+    transform:  translate(-15% , -20%);
+    color: white;
 }
 
-.overlay:hover + .play-button{
+div.overlay:hover .play-button {
     display: block;
+    filter: opacity(0.9) saturate(0.5);
+}
+
+ div.overlay:hover img {
+    display:block;
+    position: absolute;
+    filter: opacity(0.9);
 }
 
 
