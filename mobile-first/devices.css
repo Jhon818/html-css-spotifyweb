@@ -39,25 +39,11 @@
         padding-left: 50px;
     }
 
-    main #top-nav span {
-        width: 30%;
-    }
+    
 
     
 
-footer {
-    width: 600px;
-}
 
-    footer  .bottom-left-side , .bottom-center-side , .bottom-right-side{
-     max-width: 100%;
-
-    }
-
-   footer .bottom-center-side .music-player , div.bottom-center-side .time-bar {
-    justify-content: center;
-    display: flex;
-   }
 
 }
 
