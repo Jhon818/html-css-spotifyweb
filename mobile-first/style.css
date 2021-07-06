@@ -312,21 +312,23 @@ div .text-img {
 }
 /* navbar text  */
 
+
+
 .navbar-center > div {
     position: relative;
     text-decoration: none;
     list-style-type: none;
-    width: 150px;
     margin-right: 10px;
     float: left;
-    margin-bottom: 10px;
+    height: 260px;
+    max-width: 200px;
 }
 
 .navbar-center div > img {
     position: relative;
     object-fit: cover;
-    height: 150px;
-    width: 100%;
+    height: 200px;
+    max-height: 25vw;
 }
 
 

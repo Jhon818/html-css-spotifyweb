@@ -40,9 +40,7 @@
         padding-left: 50px;
     }
 
-    /* nav.navbar-center img {
-        width: 100%;
-    } */
+     
 
     footer .bottom-left-side ,  .bottom-right-side {
        width: 40%;
@@ -52,7 +50,19 @@
         width: 30%;
     }
 
-    
+    .navbar-center {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .navbar-center > div {
+        max-width: 25vw;
+
+    }
+
+    .navbar-center div img {
+        width: 100%;
+    }
 }
 
 
