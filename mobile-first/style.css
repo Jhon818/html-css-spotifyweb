@@ -231,9 +231,12 @@ main {
 }
 
 
+
+
 #top-nav {
     display: flex;
     font-size: 14px;
+    flex-flow: row wrap;
     justify-content: center;
     align-items: center;
     text-transform: uppercase;
@@ -313,7 +316,7 @@ div .text-img {
     position: relative;
     text-decoration: none;
     list-style-type: none;
-    width: 25vh;
+    width: 150px;
     margin-right: 10px;
     float: left;
     margin-bottom: 10px;
@@ -322,7 +325,7 @@ div .text-img {
 .navbar-center div > img {
     position: relative;
     object-fit: cover;
-    height: 25vh;
+    height: 150px;
 }
 
 /* nav.navbar-center div img {} */
