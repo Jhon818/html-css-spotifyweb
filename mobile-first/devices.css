@@ -38,9 +38,21 @@
 
     main {
         padding-left: 50px;
-        width: 80%;
     }
 
+    /* nav.navbar-center img {
+        width: 100%;
+    } */
+
+    footer .bottom-left-side ,  .bottom-right-side {
+       width: 40%;
+    }
+
+    footer .bottom-center-side {
+        width: 30%;
+    }
+
+    
 }
 
 
